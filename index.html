@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Balsamiq Sans' rel='stylesheet'>
+
+    <title>Todo List</title>
+    <style>
+        body {
+            /* font-family: 'Actor'; */
+            font-family: 'Balsamiq Sans';
+            /* text-align: center; */
+        }
+        </style>
+</head>
+<body>
+    <header class="p-1">
+        <div class=" rounded text-center text-dark shadow ">
+            <h1> <b> Todo List<b> </h1>
+        </div>
+    </header>
+    <div class="container"><br>
+        <form >
+            <div class="row">
+                <div class="col-md-8">
+                    <input type="text"  class="form-control font-weight-bold" id="input" placeholder="Ex.Complete JS-4th Project">
+                </div>
+                <div class="col-md-4">
+                    <input type="submit" class="btn btn-success rounded font-weight-bold" value="Add Task &#x23CE;" id="btn">
+                </div>
+            </form>
+            <div class="col-md-12">
+                <!-- <hr> -->
+            </div>
+            <div class="container text-center">
+                <p class="text-muted pt-2">How to use : <strong>Start typing task and hit enter or click add task button to save & click the task once its compeleted.</strong></p>
+            </div>
+                <div class="to-dos container-fluid text-center" id="">
+                    <table class="table" id="main">
+                        <thead>
+                        <tr>
+                            <th class="text-primary">Tasks</th>
+                            <th class="text-danger">Time</th>
+                        </tr>
+                        </thead>
+                        <tbody class="text-dark " > 
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+
+
+            
+        </div>
+    </div>
+    <footer  class=" footer fixed-bottom" role="alert">
+        <div class="container-fluid mt-5  bg-dark text-light text-center">
+            <span>
+                by 007hyno © 2020 All Rights Reserved.
+            </span>
+        </div>
+      </footer >
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
