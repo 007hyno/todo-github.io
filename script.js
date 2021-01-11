@@ -2,7 +2,7 @@ let input = document.getElementById('input');
 let btn = document.getElementById('btn');
 let table = document.getElementById('main');
 
-btn.addEventListener('click', function(){
+btn.addEventListener('click', function(event){
     var row = document.createElement('tr');
     var l = document.createElement('li');
     var todo = document.createElement('td');
@@ -29,4 +29,8 @@ btn.addEventListener('click', function(){
         time.style.color = "#949494";
         time.style.fontSize = "italic";
     })
+    row.addEventListener('dblclick', function(){
+        table.removeChild(row);
+    })
+    event.preventDefault();
 })
