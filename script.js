@@ -34,3 +34,9 @@ btn.addEventListener('click', function(event){
     })
     event.preventDefault();
 })
+var help = document.getElementById('help');
+var ask = document.getElementById('ask');
+help.addEventListener('click',function(){
+    ask.classList.toggle("hide");
+    console.log('paras');
+})

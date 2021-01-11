@@ -11,6 +11,9 @@
         .conn{
             user-select:none;
         }
+        .hide{
+            display: none;
+        }
     </style>
     <title>Todo List</title>
     <style>
@@ -28,26 +31,27 @@
         </div>
     </header>
     <div class="container conn"><br>
-        <form >
-            <div class="row">
-                <div class="col-md-8">
-                    <input type="text"  class="form-control font-weight-bold" id="input" placeholder="Ex.Complete JS-4th Project">
-                </div>
-                <div class="col-md-4">
-                    <input type="submit" class="btn btn-success rounded font-weight-bold" value="Add Task &#x23CE;" id="btn">
-                </div>
-            </form>
+
             <div class="col-md-12">
                 <!-- <hr> -->
             </div>
-            <div class="container">
-                <p class="text-muted pt-2"><span class="text-success">How to use :</span><br> <span class="text-muted">
-                    <span class="text-info"> Add Task-</span> Start typing task and hit enter or click <span class=" rounded p-1 bg-success text-light"> Add Task &#x23CE </span class="text-suceess">.</span><br>
+            <p class="text-muted pt-2 " id="help"><span class="text-light p-1 bg-warning">How to use :</span><br> <span class="text-muted">
+            <div class="container hide" id="ask">
+                    <span class="text-info"> Add Task-</span> Start typing task and hit enter or click <span class=" rounded p-1 bg-success text-light"> Add-Task &#x23CE </span class="text-suceess">.</span><br>
                     <span class="text-info"> Complete Task-</span> Click over task once its compeleted.</span><br>
                     <span class="text-info"> Delete Task-</span> Double click to delete.</span>
                 </p>
             </div>
-                <div class="to-dos container-fluid text-center" id="">
+            <form >
+                <div class="row">
+                    <div class="col-md-8">
+                        <input type="text"  class="form-control font-weight-bold" id="input" placeholder="Ex.Complete JS-4th Project">
+                    </div>
+                    <div class="col-md-4">
+                        <input type="submit" class="btn btn-success rounded font-weight-bold" value="Add Task &#x23CE;" id="btn">
+                    </div>
+                </form>
+                <div class="to-dos container-fluid text-center mt-4" id="">
                     <table class="table" id="main">
                         <thead>
                         <tr>
